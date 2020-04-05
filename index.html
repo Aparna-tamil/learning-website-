@@ -1,0 +1,209 @@
+# learning-website-
+website development on learning website
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RANA ACADEMY</title>
+
+    <link rel="stylesheet" href="mystyle.css">
+
+    <title>Cookie!!!</title>
+	<script type="text/javascript">
+		function createCookie(cookieName,cookieValue,daysToExpire)
+        {
+          var date = new Date();
+          date.setTime(date.getTime()+(daysToExpire*24*60*60*1000));
+          document.cookie = cookieName + "=" + cookieValue + "; expires=" + date.toGMTString();
+        }
+		function accessCookie(cookieName)
+        {
+          var name = cookieName + "=";
+          var allCookieArray = document.cookie.split(';');
+          for(var i=0; i<allCookieArray.length; i++)
+          {
+            var temp = allCookieArray[i].trim();
+            if (temp.indexOf(name)==0)
+            return temp.substring(name.length,temp.length);
+       	  }
+        	return "";
+        }
+		function checkCookie()
+        {
+          var user = accessCookie("testCookie");
+          if (user!="")
+        	alert("Welcome Back " + user + "!!!");
+          else
+          {
+            user = prompt("Please enter your name");
+            num = prompt("How many days you want to store your name on your computer?");
+            if (user!="" && user!=null)
+            {
+            createCookie("testCookie", user, num);
+            }
+          }
+        }
+  </script>
+       
+ 
+
+  
+   <script type = "text/javascript">
+    
+       function ReadCookie() {
+          var allcookies = document.cookie;
+          document.write ("All Cookies : " + allcookies );
+          
+          // Get all the cookies pairs in an array
+          cookiearray = allcookies.split(';');
+          
+          // Now take key value pair out of this array
+          for(var i=0; i<cookiearray.length; i++) {
+             name = cookiearray[i].split('=')[0];
+             value = cookiearray[i].split('=')[1];
+             document.write ("Key is : " + name + " and Value is : " + value);
+          }
+       }
+    //-->
+
+ </script>
+
+</script>  
+</head>
+<style>
+  .ml12 {
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+</style>
+<body onload="checkCookie()"></body>
+    
+</head>
+
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.example {
+  padding: 20px;
+  color: white;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .example {background: red;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {background: green;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {background: blue;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {background: orange;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {background: pink;}
+}
+
+</style>
+
+</body>
+<body>
+  <body onload="checkCookie()" ></body>
+    <div class="header">
+        <a href="#default" class="logo">RANA_ACADEMY</a>
+        <div class="header-right">
+            <a class="active" href="index.html">HOME</a>
+            <a href="course.html">COARSES</a>
+            <a href="about.html">ABOUT</a>
+            <a href="3.html">REGISTRATION</a>
+        </div>
+
+
+</div>
+
+    <div style="padding-left:20px">
+        <div >
+            <h1 class="ml12">PLATFORM FOR YOUR FUTURE</h1>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js">
+            // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml12');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml12 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+    targets: '.ml12 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: (el, i) => 100 + 30 * i
+  });
+</script>
+            <p style="text-align:center">ACHEIVE UR GOAL</p>
+        </div class="b">
+    </div>
+  </div>
+
+</body>
+
+
+<body>
+
+
+    <div class="a">
+
+
+        <h1 style="text-align:center">
+            HOW TO BECOME A DEVELOPER</h1>
+        <img src="img/h.gif">
+        <P style="text-align:center">PLATFORM FOR YOUR BRGHT FUTURE</P>
+        <video width=340 height="250" controls autoplay>
+                <source src="img/vd.mp4" type="video/mp4"> 
+                    
+            </video>
+        <img src="img/g.gif">
+        <h1>ANYONE CAN BECOME A DESIGNER</h1>
+        <img src="img/pr.jpg">
+        <h1>Over 10 Years of Experience Training Top-level Engineers</h1>
+        <img src="img/pr2.jpg">
+
+
+    </div class="a">
+    <div class="footer">
+        <h1>CONTACT US 987654321 </h1>
+        <img src="img/t.jpg">
+        <p style="text-align: right ;;">emald: ranaacademy@gmail.com</p>
+        <p style="text-align: right;"> fb id:ranaacademy</p>
+        <p style="text-align-last: righnstt;">CHENNAI Ambattur.</p>
+        <p style="text-align: right;">insta id RANA_ACADEMY </p>
+    </div>
+    <form name = "myform" action = "">
+      
+      <input type = "button" value = "Get Cookie" onclick = "ReadCookie()"/>
+   </form>      
+</body>
+
+</html>
